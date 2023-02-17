@@ -23,7 +23,8 @@
         <!--Menu Mobile-->
         <ul class="side-nav" id="menu-mobile">
             <li><a class="hide-menu" href="#home">Home</a></li>   
-            <li><a class="hide-menu" href="#grade">Grade do Curso</a></li>   
+            <li><a class="hide-menu" href="#grade">Conteúdos</a></li>   
+            <li><a class="hide-menu" href="#curso">Sobre o Curso</a></li>   
         
         </ul>
         <!--Menu-->
@@ -34,7 +35,8 @@
                 <a href=""><img class="logo_img" src="img/logo.png" alt="Ellen Silva"></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#grade">Grade do Curso</a></li>
+                    <li><a href="#grade">Conteúdos</a></li>
+                    <li><a href="#curso">Sobre o Curso</a></li>
                     
                 </ul>
                 <!--Icone do Menu-->
@@ -55,16 +57,21 @@
                 </div>
             </div>
             <div class="col s12 l4 center">
-                <img class="container right" src="img/ellen3.png" alt="Ellen Silva">
+                <br>
+                <img class="container" src="img/ellen3.png" alt="Ellen Silva">
             </div>
         </div>
     </section>
+
+<!--Sobre-->
+<!--<p class="light">Eu sou Ellen Silva, estou na área da estética desde 2020, mas antes disso trabalhei mais de 10 anos como auxiliar de escritório, mas decidi investir mudar e investi na área da estética, iniciei trabalhando apenas com sobrancelhas mas os cílios me proporcionam independência financeira e liberdade de horários para minha vida pessoal, e você também poderá conquistar seus objetivos! Eu quero te ajudar nessa jornada por ensinar tudo o que sei sobre cílios na teoria e na prática!</p>
+<p class="light">Quero te preparar e te tornar uma profissional qualificada e preparada para realizar extensões de forma correta e segura!</p>-->
 
 <!--Grade-->
     <section class="grade bloco scrollspy" id="grade">
         <div class="row container bg-transparente">
             <div class="col s12 center">
-                <h2 class="light titulo">Grade do Curso</h2>
+                <h2 class="light titulo">Conteúdos</h2>
             </div>
 
             <div class="col s12 l6">
@@ -99,6 +106,38 @@
         </div>
     </section>
 
+<!--Curso-->
+    <section class="curso bloco scrollspy" id="curso">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light titulo">Sobre o Curso</h2>
+            </div>
+
+            <div class="col s12 l6">
+                <ul>
+                    <li>Carga horária de 16 horas</li>
+                    <li>VIP Individual</li>
+                    <li>Apostila</li>
+                    <li>Certificado</li>
+                    <li>Kit básico iniciante</li>
+                    <li>Prática em Modelos</li>
+                    <li>Coffee Break no encerramento</li>
+                    <li>Assistência Pós Curso</li>
+                </ul>
+            </div>
+
+            <div class="col s12 l6">
+                <div class="carousel carousel-slider container" data-indicators="true">
+                  <a href="#" class="carousel-item"><img src="img/aluna1.jpeg" alt="aluna 1"></a>
+                  <a href="#" class="carousel-item"><img src="img/aluna2.jpeg" alt="aluna 2"></a>
+                  <a href="#" class="carousel-item"><img src="img/aluna3.jpeg" alt="aluna 3"></a>
+                  <a href="#" class="carousel-item"><img src="img/aluna4.jpeg" alt="aluna 4"></a>
+                  <a href="#" class="carousel-item"><img src="img/aluna5.jpeg" alt="aluna 5"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 <!--Jquery-->
@@ -116,10 +155,20 @@
       $(".scrollspy").scrollSpy({
         scrollOffset: 0
       });
+      //Carousel slider
+      $(".carousel.carousel-slider").carousel({
+          fullWidth: true
+      });
       //Enconde Menu ao Clicar
       $(".hide-menu").click(function(){
         $(".button-collapse").sideNav("hide")
-      })
+      });
+      //Autoplay
+      function autoplay() {
+        $(".carousel").carousel("next");
+        setTimeout(autoplay, 4500);
+      }
+      autoplay();
     });
 
     //Adicionando Navcolor

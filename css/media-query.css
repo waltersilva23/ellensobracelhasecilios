@@ -13,6 +13,12 @@
       .grade ul li {
         padding-left: 5%;
       }
+
+      .curso ul li {
+        margin-left: 12%;
+        font-weight: bold;
+        line-height: 3rem;
+      }
       
       /*Grade - Animation*/
       @keyframes mudarbg {

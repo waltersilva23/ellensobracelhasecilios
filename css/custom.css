@@ -69,7 +69,7 @@ html, body {
 }*/
 
 /*Home*/
-.home{
+.home, .curso {
   background-color: #9d938a;
 }
 
@@ -110,6 +110,14 @@ html, body {
   35% {background-image: url('../img/bg2.jpg');}
   70% {background-image: url('../img/bg3.jpg');}
   100% {background-image: url('../img/bg1.jpg');}
+}
+
+/*Curso*/
+.curso ul li {
+  margin-left: 20%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 3rem;
 }
 
 /*Custom*/
