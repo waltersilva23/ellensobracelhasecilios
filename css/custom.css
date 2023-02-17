@@ -101,6 +101,10 @@ html, body {
   font-weight: bold;
 }
 
+.bg-transparente {
+  background-color: #ffffff36;
+}
+
 /*Grade - Animation*/
 @keyframes mudarbg {
   35% {background-image: url('../img/bg2.jpg');}
@@ -137,4 +141,8 @@ line-height: 94px;
 .side-nav li>a {
   color: #000;
   font-weight: 100;
+}
+
+.row {
+  margin-bottom: 0px;
 }
