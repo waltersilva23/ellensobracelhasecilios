@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+}
+.bloco {
+    min-height: 100%;
+    padding-top: 100px;
+}
+
+.btn-whatsapp{
+  background-color: #34af23;
+  color: #000;
+  font-weight: bold;
+  padding: 0 1.2rem
+}
+
+.btn-whatsapp:hover {
+  background-color: #34af23;
+  color: #fff;
+}
+
+/*Logo*/
+.logo_text {
+  font-size: 0;
+  margin: 0;
+}
+
+.logo_img {
+  width: 100px;
+  margin-top: 5px;
+}
+
+/*Título e Parágrafo*/
+.titulo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.titulo::after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #000;
+  margin: 15px auto;
+}
+
+.paragrafo {
+  line-height: 1.8rem;
+  font-weight: bold;
+}
+
+/*Menu*/
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s linear;
+}
+
+.navbar ul a {
+  color: #000;
+}
+
+.navbar ul a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/*.nav-color {
+  background-color: rgba(0, 0, 0, 0.068);
+  transition: background-color 0.5s linear;
+}*/
+
+/*Home*/
+.home{
+  background-color: #9d938a;
+}
+
+.banner {
+  padding-top: 3%;
+}
+
+.banner h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+/*Grade*/
+.grade{
+  animation: mudarbg 15s infinite;
+  background-image: url('../img/bg1.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.grade ul li {
+  padding-left: 20%;
+  font-size: 1.4rem;
+}
+
+/*Grade - Animation*/
+@keyframes mudarbg {
+  35% {background-image: url('../img/bg2.jpg');}
+  70% {background-image: url('../img/bg3.jpg');}
+  100% {background-image: url('../img/bg1.jpg');}
+}
+
+/*Custom*/
+/*Menu*/
+nav {
+  height: 94px;
+  line-height: 94px;
+}
+
+nav ul {
+  margin-top: 15px;
+}
+
+.navbar-fixed {
+  position: absolute;
+}
+
+/*Menu Mobile*/
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {
+line-height: 94px;
+}
+
+.side-nav {
+  background: url('../img/textura1.png');
+}
+
+.side-nav li>a {
+  color: #000;
+  font-weight: 100;
+}
