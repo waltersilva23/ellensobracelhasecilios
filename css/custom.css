@@ -3,7 +3,7 @@ html, body {
 }
 .bloco {
     min-height: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .btn-whatsapp{
@@ -120,6 +120,11 @@ html, body {
   line-height: 3rem;
 }
 
+.teste {
+  margin-top: 10px;
+
+}
+
 /*Custom*/
 /*Menu*/
 nav {
@@ -153,4 +158,5 @@ line-height: 94px;
 
 .row {
   margin-bottom: 0px;
+  padding-bottom: 5px;
 }
