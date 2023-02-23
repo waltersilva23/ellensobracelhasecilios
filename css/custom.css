@@ -3,7 +3,7 @@ html, body {
 }
 .bloco {
     min-height: 100%;
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .btn-whatsapp{
@@ -69,7 +69,7 @@ html, body {
 }*/
 
 /*Home*/
-.home, .curso {
+.home, .curso, .contato {
   background-color: #9d938a;
 }
 
@@ -123,6 +123,26 @@ html, body {
 .teste {
   margin-top: 10px;
 
+}
+
+/*Contato*/
+.contato h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.contato .mapa {
+  min-height: 500px;
+}
+
+.contato .mapa iframe {
+  width: 100%;
+  border: none;
+}
+
+.contato .informacoes {
+  padding: 30px;
 }
 
 /*Custom*/
