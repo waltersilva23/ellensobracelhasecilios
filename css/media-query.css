@@ -3,24 +3,25 @@
         font-size: 2rem;
     }
 
-    .grade{
+    .conteudo {
         animation: mudarbg 15s infinite;
         background-image: url('../img/bgm1.jpg');
         background-repeat: repeat;
         background-size: cover;
     }
 
-    .grade ul li {
+    .conteudo ul li {
         padding-left: 5%;
+        font-size: 1.2rem;
     }
 
     .curso ul li {
         margin-left: 12%;
-        font-weight: bold;
-        line-height: 3rem;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
     }
       
-    /*Grade - Animation*/
+    /*Conteudo - Animation*/
     @keyframes mudarbg {
         35% {background-image: url('../img/bgm2.jpg');}
         70% {background-image: url('../img/bgm3.jpeg');}

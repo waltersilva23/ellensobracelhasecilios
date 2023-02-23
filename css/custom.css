@@ -87,15 +87,15 @@ html, body {
   line-height: 1.8rem;
 }
 
-/*Grade*/
-.grade{
+/*Conteudo*/
+.conteudo {
   animation: mudarbg 15s infinite;
   background-image: url('../img/bg1.jpg');
   background-repeat: repeat;
   background-size: cover;
 }
 
-.grade ul li {
+.conteudo ul li {
   padding-left: 20%;
   font-size: 1.4rem;
   font-weight: bold;
@@ -105,7 +105,7 @@ html, body {
   background-color: #ffffff36;
 }
 
-/*Grade - Animation*/
+/*Conteudo - Animation*/
 @keyframes mudarbg {
   35% {background-image: url('../img/bg2.jpg');}
   70% {background-image: url('../img/bg3.jpg');}
